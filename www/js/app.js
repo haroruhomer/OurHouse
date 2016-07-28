@@ -31,6 +31,13 @@ angular.module('nuestracasa', ['ionic', 'nuestracasa.controllers'])
     templateUrl: 'templates/menu.html',
     controller: 'ncCtrl'
   })
+  .state('menu.tabs', {
+    url: '/tabs',
+    //abstract: true,
+    'menuContent':{
+      templateUrl: 'templates/tabs.html'
+    }
+  })
   .state('menu.home',{
     url:'/home',
     views:{
@@ -40,15 +47,22 @@ angular.module('nuestracasa', ['ionic', 'nuestracasa.controllers'])
       }
     }
   })
-  .state('menu.search', {
+  .state('menu.tabs.search', {
     url: '/search',
     views: {
-      'menuContent': {
+      'tab-search': {
         templateUrl: 'templates/search.html'
       }
     }
   })
-
+  .state('menu.tabs.map', {
+    url: '/map',
+    views: {
+      'tab-map': {
+        templateUrl: 'templates/map.html'
+      }
+    }
+  })
   .state('menu.browse', {
       url: '/browse',
       views: {
