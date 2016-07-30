@@ -19,15 +19,13 @@
     <ion-content>
       <ion-list>
         <ion-item class="item item-icon-left" menu-close href="#/menu/home">
-          <i class="icon ion-home"></i>
-          Inicio
+          <i class="icon ion-home"></i> Inicio
         </ion-item>
         <ion-item menu-close ng-click="login()">
           Login
         </ion-item>
-        <ion-item menu-close href="#/menu/tabs/search">
-          <i class="icon ion-map"></i>
-          Buscar
+        <ion-item menu-close ui-sref="menu.tabs.search">
+          <i class="ion-ios-location"></i> Buscar
         </ion-item>
         <ion-item menu-close href="#/menu/browse">
           Browse
@@ -35,25 +33,21 @@
         <ion-item menu-close href="#/menu/playlists">
           Playlists
         </ion-item>
-        <div class="" ng-if="session">
+        <div ng-if="session">
           <div class="item item-divider">
             {{usuario}}
           </div>
           <ion-item class="item item-icon-left" menu-close href="#/menu/search">
-            <i class="icon ion-ios-upload"></i>
-            Publicar
+            <i class="icon ion-ios-upload"></i> Publicar
           </ion-item>
           <ion-item class="item item-icon-left" menu-close href="#/menu/search">
-            <i class="icon ion-ios-star"></i>
-            Favoritos
+            <i class="icon ion-ios-star"></i> Favoritos
+          </ion-item>
+          <ion-item class="item item-icon-left" menu-close ui-sref="menu.tabs.search">
+            <i class="icon ion-ios-home"></i> Mis inmuebles
           </ion-item>
           <ion-item class="item item-icon-left" menu-close href="#/menu/search">
-            <i class="icon ion-ios-home"></i>
-            Mis inmuebles
-          </ion-item>
-          <ion-item class="item item-icon-left" menu-close href="#/menu/search">
-            <i class="icon ion-email"></i>
-            Mis mensajes
+            <i class="icon ion-email"></i> Mis mensajes
           </ion-item>
         </div>
 

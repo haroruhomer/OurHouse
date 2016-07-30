@@ -26,44 +26,47 @@ angular.module('nuestracasa', ['ionic', 'nuestracasa.controllers'])
   $stateProvider
 
     .state('menu', {
-    url: '/menu',
-    abstract: true,
-    templateUrl: 'templates/menu.html',
-    controller: 'ncCtrl'
-  })
-  .state('menu.tabs', {
-    url: '/tabs',
-    //abstract: true,
-    'menuContent':{
-      templateUrl: 'templates/tabs.html'
-    }
-  })
-  .state('menu.home',{
-    url:'/home',
-    views:{
-      'menuContent':{
-      templateUrl:'templates/home.html',
-      controller: 'homeCtrl'
+      url: '/menu',
+      abstract: true,
+      templateUrl: 'templates/menu.html',
+      controller: 'ncCtrl'
+    })
+    .state('menu.tabs', {
+      url: '/tabs',
+      abstract: true,
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/tabs.html'
+        }
       }
-    }
-  })
-  .state('menu.tabs.search', {
-    url: '/search',
-    views: {
-      'tab-search': {
-        templateUrl: 'templates/search.html'
+    })
+    .state('menu.home', {
+      url: '/home',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/home.html',
+          controller: 'homeCtrl'
+        }
       }
-    }
-  })
-  .state('menu.tabs.map', {
-    url: '/map',
-    views: {
-      'tab-map': {
-        templateUrl: 'templates/map.html'
+    })
+    .state('menu.tabs.search', {
+      url: '/search',
+      views: {
+        'tab-search': {
+          templateUrl: 'templates/search.html'
+        }
       }
-    }
-  })
-  .state('menu.browse', {
+    })
+    .state('menu.tabs.map', {
+      url: '/map',
+      views: {
+        'tab-map': {
+          templateUrl: 'templates/map.html',
+          controller: 'MapCtrl'
+        }
+      }
+    })
+    .state('menu.browse', {
       url: '/browse',
       views: {
         'menuContent': {
