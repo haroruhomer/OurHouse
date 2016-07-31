@@ -1,5 +1,153 @@
 <ion-view view-title="Busqueda Avanzada">
   <ion-content>
-    <h1>Busqueda Avanzada</h1>
+  <div id="oferta">
+  		<label class="item item-input item-select">
+			<div class="input-label"> Oferta:</div>
+			<select>
+				<option>Todos</option>
+				<option>Venta</option>
+				<option>Arriendo</option>
+				<option>Remate</option>
+				<option>Permuta</option>
+				<option>Arriendo/ventas</option>
+			</select>
+		</label>	
+  </div><br>
+	<div id="inmueble">
+		<label class="item item-input item-select">
+			<div class="input-label"> Inmueble:</div>
+			<select>
+				<option>Todos los Inmuebles</option>
+				<option>Casa</option>
+				<option>Apartamento</option>
+				<option>Apataestudio</option>
+				<option>Bodega</option>
+				<option>Casa Lote</option>
+				<option>Edificio</option>
+				<option>Habitación</option>
+				<option>Local</option>
+				<option>Lote</option>
+				<option>Oficina</option>
+				<option>Parqueadero</option>
+				<option>Consultorio</option>
+				<option>Rural</option>
+				<option>Cabaña</option>
+				<option>Condominio</option>
+				<option>Finca</option>
+				<option>Casa Campestre</option>
+			</select>
+		</label>
+	</div><br>
+	<div id="ciudades">
+		<label class="item item-input item-select">
+			<div class="input-label"> Ciudades:</div>
+			<select>
+				<option>Todos las Ciudades</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+				<option>Bogotá</option>
+			</select>
+		</label>
+	</div>
+	<br>
+	<div id="zonas" class="col center">
+		<label class="item item-input item-select">
+			<div class="input-label"> Zonas:</div>
+			<select>
+				<option>Todas</option>
+				<option>Norte</option>
+				<option>Sur</option>
+				<option>Oriente</option>
+				<option>Occidente</option>
+				<option>Nor-Oriente</option>
+				<option>Nor-Occidente</option>
+				<option>Sur-Oriente</option>
+				<option>Sur-Occidente</option>
+			</select>
+		</label>
+	</div><br>
+	<div id="barrio">
+		<label class="item item-input">
+			<input type="text" name="barrio" placeholder="Ingrese el Barrio">
+		</label>
+	</div><br>
+	<div id="precio">
+		<label class="item item-input">
+		<span class="input-label">	Precio Desde:</span>
+			<input type="number" name="minvalor">
+		</label>
+		<label class="item item-input">
+		<span class="input-label">	Precio Hasta:</span>
+			<input type="number" name="maxvalor">
+		</label>
+	</div><br>
+	<div id="banios">
+		<label class="item item-input item-select">
+			<div class="input-label"> Baños:</div>
+			<select>
+				<option>Todos</option>
+				<option>1 Baño</option>
+				<option>2 Baños</option>
+				<option>3 Baños</option>
+				<option>4 Baños</option>
+				<option>5 o mas Baños</option>
+			</select>
+		</label>
+	</div><br>
+	<div id="habitaciones">
+		<label class="item item-input item-select">
+			<div class="input-label"> Habitaciones:</div>
+			<select>
+				<option>Todos</option>
+				<option>1 Habitación</option>
+				<option>2 Habitaciones</option>
+				<option>3 Habitaciones</option>
+				<option>4 Habitaciones</option>
+				<option>5 o mas Habitaciones</option>
+			</select>
+		</label>
+	</div><br>
+	<div id="anios">
+		<label class="item item-input item-select">
+			<div class="input-label"> Antiguedad:</div>
+				<select>
+					<option>Todos</option>
+					<option>A Estrenar</option>
+					<option>En Construcció</option>
+					<option>1 Año</option>
+					<option>2 Años</option>
+					<option>4 Años</option>
+					<option>5 Años o más</option>
+				</select>
+		</label>
+	</div><br>
+	<div>
+		<label class="item item-input">
+			<span class="input-label">Publicado Desde:</span>
+			<input type="date" name="fechamin">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Publicado Hasta:</span>
+			<input type="date" name="fechamax">
+		</label>
+	</div> <br>
+	<div id="boton" class="col col-33 col-offset-33">
+	<button class="button button-balanced" value="Buscar">Buscar</button>
+	</div>
   </ion-content>
 </ion-view>
+
