@@ -74,6 +74,15 @@ angular.module('nuestracasa', ['ionic', 'nuestracasa.controllers'])
         }
       }
     })
+    .state('menu.publish', {
+    url: '/publish',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/publish.html',
+        controller:'publishCtrl'
+      }
+    }
+  })
     .state('menu.playlists', {
       url: '/playlists',
       views: {

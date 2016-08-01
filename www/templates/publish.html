@@ -1,0 +1,134 @@
+<ion-view view-title="Publicar">
+  <ion-content>
+	<div class="list" id="oferta">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Anunciar Como:
+	    </div>
+	    <select ng-model="oferta">
+	      <option ng-repeat="offer in oferta">{{offer.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+	<div class="list" id="inmueble">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Mi inmueble es:
+	    </div>
+	    <select ng-model="inmueble">
+	      <option ng-repeat="tipo in inmueble">{{tipo.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+	<div id="title">
+		<label class="item item-input">
+			<input type="text" name="titulo" placeholder="Ingrese el titulo del anuncio" required="true">
+		</label>
+	</div><br>
+	<div id="description">
+		<label class="item item-input">
+			<input type="text" name="descripcion" placeholder="Ingrese una descripción al anuncio" required="true">
+		</label>
+	</div><br>
+	<div class="list" id="estado">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Estado del Inmueble:
+	    </div>
+	    <select ng-model="estado">
+	      <option ng-repeat="estado in estado">{{estado.text}}</option>
+	    </select>
+	  </label>
+	</div><br>	
+	<div class="list" id="tag">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Etiqueta del Anuncio:
+	    </div>
+	    <select ng-model="etiqueta">
+	      <option ng-repeat="tag in etiqueta">{{tag.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+	<div class="list" id="anios">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Antiguedad del Inmueble:
+	    </div>
+	    <select ng-model="anios">
+	      <option ng-repeat="anios in antiguedad">{{anios.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+
+	<div class="list" id="pisos">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Pisos:
+	    </div>
+	    <select ng-model="pisos">
+	      <option ng-repeat="piso in pisos">{{piso.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+	<div class="list" id="Habitaciones">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Habitaciones:
+	    </div>
+	    <select ng-model="habs">
+	      <option ng-repeat="hab in habs">{{hab.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+		<div class="list" id="banio">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Baños:
+	    </div>
+	    <select ng-model="banio">
+	      <option ng-repeat="banio in banios">{{banio.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+	<div class="list" id="pais">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				País:
+	    </div>
+	    <select ng-model="pais">
+	      <option ng-repeat="pais in paises">{{pais.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+	<div class="list" id="depto">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Departamento:
+	    </div>
+	    <select ng-model="dpto">
+	      <option ng-repeat="dpto in deptos">{{dpto.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+		<div class="list" id="ciudad">
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+				Ciudades:
+	    </div>
+	    <select ng-model="ciudad">
+	      <option ng-repeat="ciudad in ciudades">{{ciudad.text}}</option>
+	    </select>
+	  </label>
+	</div><br>
+	<div id="direcciom">
+		<label class="item item-input">
+			<input type="text" name="direccion" placeholder="Ingrese la Dirección">
+		</label>
+	</div><br>
+	<div>
+	 	<button class="button button-block button-balanced">Ubicación en Mapa</button>	
+	 	<button class="button button-block button-balanced">Foto</button>
+	</div>
+  </ion-content>
+</ion-view>
