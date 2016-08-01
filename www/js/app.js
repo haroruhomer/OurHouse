@@ -95,4 +95,7 @@ angular.module('nuestracasa', ['ionic', 'nuestracasa.controllers'])
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/menu/home');
+})
+.config(function($ionicConfigProvider) {
+    $ionicConfigProvider.tabs.position('bottom');
 });

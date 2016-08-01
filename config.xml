@@ -9,6 +9,11 @@
     </author>
   <content src="index.html"/>
   <access origin="*"/>
+  <access origin="http://*.googleapis.com"/>
+  <access origin="https://*.googleapis.com"/>
+  <allow-intent href="http://maps.googleapis.com"/>
+  <allow-intent href="https://maps.googleapis.com"/>
+  <allow-intent href="geo:*" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
